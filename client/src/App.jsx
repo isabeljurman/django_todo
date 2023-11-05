@@ -8,14 +8,26 @@ function App() {
     return (
         <BrowserRouter>
             <div className="container mx-auto">
+                {/* Navigation component for app */}
                 <Navigation/>
-            <Routes>
-                <Route path='/' element={<Navigate to={"/tasks"}/>}/>
-                <Route path='/tasks' element={<TasksPage/>}/>
-                <Route path='/tasks/create' element={<TaskFormPage/>}/>
-                <Route path='/tasks/:id' element={<TaskFormPage/>}/>
-            </Routes>
-            <Toaster/>
+
+                {/* Define the route configurations using React Router */}
+                <Routes>
+                    {/* Home route redirects to the tasks page */}
+                    <Route path='/' element={<Navigate to={"/tasks"}/>}/>
+
+                    {/* TasksPage component for displaying tasks */}
+                    <Route path='/tasks' element={<TasksPage/>}/>
+
+                    {/* TaskFormPage component for creating new tasks */}
+                    <Route path='/tasks/create' element={<TaskFormPage/>}/>
+
+                    {/* TaskFormPage component for editing a specific task */}
+                    <Route path='/tasks/:id' element={<TaskFormPage/>}/>
+                </Routes>
+
+                {/* Notification toaster for displaying messages */}
+                <Toaster/>
             </div>
         </BrowserRouter>
     );

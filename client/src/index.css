@@ -1,8 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@tailwind base; /* Includes the base styles from Tailwind CSS. */
+
+@tailwind components; /* Includes pre-designed UI components from Tailwind CSS. */
+
+@tailwind utilities; /* Includes utility classes for quickly applying styles. */
 
 body {
-  background: #202020;
-  color: #fff;
+  background: #202020; /* Sets the background color of the body element to a dark gray (#202020). */
+  color: #fff; /* Sets the text color of the body element to white (#fff). */
 }

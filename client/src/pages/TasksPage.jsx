@@ -1,5 +1,7 @@
-import {ToDoList} from "../components/ToDoList.jsx";
+import { ToDoList } from "../components/ToDoList.jsx";
 
+// This component represents the Tasks Page.
 export function TasksPage() {
-    return <ToDoList/>;
+    // Render the ToDoList component to display a list of tasks.
+    return <ToDoList />;
 }

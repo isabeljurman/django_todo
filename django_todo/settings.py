@@ -129,7 +129,10 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = ["http://localhost:5173"]
+# This setting allows cross-origin requests from "http://localhost:5173" to the Django application.
 
 REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
 }
+# This configuration sets the default schema class to "AutoSchema" for the Django REST framework.
+
